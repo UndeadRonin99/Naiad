@@ -259,6 +259,10 @@ section h2::after {
 
 
 /* Gallery */
+#gallery {
+    padding: 4rem 2rem;
+}
+
 /* Carousel Gallery */
 .carousel-wrapper {
     position: relative;
