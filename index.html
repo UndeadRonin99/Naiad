@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Custom rod repairs, reel servicing, and handcrafted landing nets. Naiad brings broken gear back to life for passionate anglers across South Africa.">
+    <meta name="keywords"
+        content="fly rod repair, reel refurbishment, custom fishing nets, South Africa, rod restoration, fly fishing gear repair, Naiad rods">
+    <meta name="author" content="DevIgnite">
+
+
+    <!-- Open Graph (for sharing) -->
+    <meta property="og:title" content="Naiad Rod Repairs – Restoring Fly Fishing Gear with Craftsmanship">
+    <meta property="og:description"
+        content="Expert rod and reel restoration, custom nets, and gear servicing handcrafted in South Africa.">
+    <meta property="og:image" content="https://flyrodrepairs.co.za/images/flyrod-repair-south-africa-yellow-trout.png">
+    <meta property="og:url" content="https://flyrodrepairs.co.za">
+    <meta property="og:type" content="website">
+
+    <!-- Standard favicon -->
+    <link rel="icon" href="images/favicons/favicon.ico" type="image/x-icon">
+
+    <!-- PNG alternatives for higher resolution -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+
+    <!-- Apple Touch Icon (iOS homescreen) -->
+    <link rel="apple-touch-icon" href="/images/favicons/apple-touch-icon.png">
+
+    <!-- Android Chrome -->
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/images/favicons/android-chrome-512x512.png">
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/images/favicons/site.webmanifest">
+
+    <title>Fly Rod Repairs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="#hero">Naiad Rod Repairs</a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-toggle" id="navToggle">&#9776;</div>
+            </nav>
+        </div>
+    </header>
+    <script>
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+
+
+    <section class="hero">
+        <div class="hero-content">
+            <img src="images/flyrod-repair-south-africa-yellow-trout.png" alt="Naiad Logo" class="logo-image">
+            <h1>Restore the Legacy</h1>
+            <p>Precision craftsmanship in fly rod repair and restoration, tailored for anglers who care about tradition
+                and performance.</p>
+            <a href="#contact" class="btn">Request a Quote</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+
+            <div class="service-card">
+                <h3>Rod Repairs & Refurbishment</h3>
+                <p>From snapped blanks to fractured tips, we expertly restore rods of all materials—Graphite, Bamboo,
+                    Split Cane, Fibreglass, even steel.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Guide & Tip Replacements</h3>
+                <p>Broken or worn guides and tips replaced and rewrapped with precision for smooth casting performance.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>Custom Rod Builds</h3>
+                <p>Looking for a bespoke rod? We build fully custom rods tailored to your preferences—crafted to perform
+                    and impress.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Reel Seat & Handle Refits</h3>
+                <p>Upgrade or refurbish your cork grip, reel seat, or handle for comfort, style, and improved control.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>Fly Reel Servicing</h3>
+                <p>Keep your reel smooth and reliable with expert servicing and maintenance for all fly reel types.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Fly Reel Refurbishment</h3>
+                <p>Restore cherished or classic reels to working condition with full cleaning, tuning, and cosmetic
+                    revitalization.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Custom Landing Nets</h3>
+                <p>Handcrafted wooden landing nets designed for both salt and freshwater use. Each piece is one of a
+                    kind.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="carousel-wrapper">
+            <button class="carousel-btn prev">&#10094;</button>
+
+            <div class="carousel">
+                <img src="images/rod restoration.jpg" alt="Restored rod 1">
+                <img src="images/rod restoration1.jpg" alt="Restored rod 2">
+                <img src="images/rod-repair-13-1024x567.jpg" alt="Repaired rod">
+                <img src="images/DSCN0774.jpg" alt="Restored rod and reel">
+                <img src="images/reel-restoration-768x1024.jpg" alt="Restored reel">
+                <img src="images/rod-repair-14-1024x572.jpg" alt="Repaired rod 2">
+                <img src="images/custom net.jpg" alt="Custom landing net">
+            </div>
+
+            <button class="carousel-btn next">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- carousel script -->
+    <script>
+        const carousel = document.querySelector('.carousel');
+        const nextBtn = document.querySelector('.carousel-btn.next');
+        const prevBtn = document.querySelector('.carousel-btn.prev');
+
+        nextBtn.addEventListener('click', () => {
+            carousel.scrollBy({ left: carousel.clientWidth, behavior: 'smooth' });
+        });
+
+        prevBtn.addEventListener('click', () => {
+            carousel.scrollBy({ left: -carousel.clientWidth, behavior: 'smooth' });
+        });
+    </script>
+
+
+
+
+    <section id="about">
+        <h2>Meet Andrew</h2>
+        <div class="about-container">
+            <!-- Group images in a single div -->
+            <div class="about-images">
+                <img src="images/Andrew-profile.jpg" alt="Andrew Strachan" class="about-image">
+                <img src="images/andrew.jpg" alt="Andrew Strachan" class="about-image">
+            </div>
+            <div class="about-text">
+                <p>Andrew Strachan lives and breathes the soul of fishing. Whether casting with bait, lure, or fly, he
+                    seeks more than the catch. He seeks connection — with nature, with history, and with the quiet
+                    rhythm of the water. At his core, he is a devoted flyfisher whose love for the craft runs as deep as
+                    the rivers and streams he holds dear.</p>
+
+                <p><br>As the founder of Naiad Custom Nets and Rod Repairs, Andrew channels this passion into every
+                    restoration. He brings broken rods back to life with a master’s touch, fusing skill with sentiment.
+                    Every fracture repaired and every guide rewrapped is a respectful nod to the journey that rod has
+                    taken — and the stories it still has left to tell.</p>
+
+                <p><br>What began as a hobby rooted in fishing and woodworking has become a lifelong pursuit of
+                    excellence. Andrew handcrafts one-of-a-kind landing nets with care and precision, using techniques
+                    that reflect both tradition and innovation. Each net is a functional work of art, tailored for those
+                    unforgettable moments on the water.</p>
+
+                <p><br>Though his professional life is rooted in corporate IT, Andrew’s soul stays tethered to
+                    craftsmanship. Each rod and each net carries a deeper meaning — a reflection of time, patience, and
+                    purpose.</p>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-wrapper">
+            <form id="contactForm" class="contact-form">
+                <div class="input-row">
+                    <input type="text" id="firstName" name="firstName" placeholder="First Name*" required>
+                    <input type="text" id="lastName" name="lastName" placeholder="Last Name*" required>
+                </div>
+                <input type="email" id="email" name="email" placeholder="Email*"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number*" required>
+                <textarea id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Email JS script -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            emailjs.init("9cvP5Kb4utHZF9F5f"); // Your EmailJS public key
+
+            document.getElementById('contactForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                emailjs.sendForm('service_5vlbysn', 'template_clx0alc', this)
+                    .then(function () {
+                        alert('SUCCESS! Your message has been sent.');
+                        document.getElementById('contactForm').reset();
+                    }, function (error) {
+                        alert('FAILED... Please try again.');
+                    });
+            });
+        });
+    </script>
+
+
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Naiad Custom Nets & Rod Repairs. All rights reserved.</p>
+            <p class="dev-credit">Website by <a href="https://devignite.co.za" target="_blank">DevIgnite 🔥</a>
+            </p>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
